@@ -28,7 +28,18 @@
 }
 
 @media only screen and (max-width:992px){
+    .header{
+        height: 80px;
+        &__menu{
+            .menuLista{
+                .menuItem{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
     .main{
+        
         &__banner{
             height: 60vh;
             .main__bannerText{
@@ -81,7 +92,47 @@
 }
 
 @media only screen and (max-width:768px){
-    
+    .header{
+        justify-content: space-between;
+        &__logo{
+            margin-left: 40px;
+        }
+        &__menu{
+            .menuRespon{
+                margin-right: 40px;
+            }
+            .menuRespon{
+                display: block;
+                width: 2.5rem;
+                height: 3rem;
+            }
+            .menuLista{
+                flex-direction: column;
+                position: absolute;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: #CDD3D5;
+                transition: transform 0.5s;
+                transform: translateX(-100%);
+                border-bottom: 5px solid #75B8C8;
+                .menuItem{
+                    width: 100%;
+                    margin: 0;
+                    .itemLink{
+                        display: inline-block;
+                        padding: 20px 0;
+                        text-align: center;
+                        width: 100%;
+                        border-radius: 0;
+                    }
+                }
+            }
+            #menuBar:checked ~ .menuLista{
+                transform: translateX(0%);
+            }
+        }
+    }
     .main{
         &__subsection{
             .main__subsectionText{
@@ -121,6 +172,17 @@
     }
 
 @media only screen and (max-width:470px){
+    .header{
+        justify-content: space-between;
+        &__logo{
+            margin-left: 15px;
+        }
+        &__menu{
+            .menuRespon{
+                margin-right: 15px;
+            }
+        }
+    }
     .main{
         &__banner{
             .main__bannerText{
