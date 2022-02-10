@@ -1,0 +1,31 @@
+.card{
+    background-color: #75B8C8 ;
+}
+
+.textoprincipal h2{
+    font-size: $title-Size;
+    text-align: center;
+    
+}
+.card--borderBot{
+    border-bottom: #75B8C8 solid 2px;
+}
+
+.colsize{
+    width: max-content;
+    padding-bottom: 20px;
+}
+
+.border__card{
+    border: #75B8C8 solid 2px;
+}
+
+.btn-primary{
+    background-color: #75B8C8;
+    border:#5ea4b6 solid 1px ;
+}
+
+.btn-primary:hover{
+    background-color: #5ea4b6;
+    border:#5ea4b6 solid 1px ;
+}

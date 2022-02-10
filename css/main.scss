@@ -1,0 +1,16 @@
+
+
+@import "./parciales//base/reset";
+@import "./parciales/base/typo";
+
+@import "./parciales/layout/header";
+@import "./parciales/layout/footer";
+@import "./parciales/layout/banner2";
+
+@import "./parciales/views/home";
+@import "./parciales/views/contact";
+@import "./parciales/views/preguntas";
+@import "./parciales/views/productos";
+@import "./parciales/views/servicios";
+
+@import "./parciales/mq";

@@ -1,0 +1,38 @@
+/*PREGUNTAS*/
+
+.main{
+    &__tencoPreguntas{
+        padding: 80px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #220C10;
+    }
+    &__preguntas{
+        font-size: 1.25rem;
+    }
+    &__preguntasList{
+        list-style: none;
+    }
+    &__preguntasItem{
+        margin-top: 20px;
+    }
+    &__preguntasText{
+        display: inline-block;
+        margin: 0;
+        padding: 10px 10px 12px 10px;
+        border: 1px solid #220C10;
+        border-left: none;
+        width: 700px;
+    }
+    &__flecha{
+        display: inline-block;
+        padding: 10px 15px 12px 15px;
+        border: 1px solid #220C10;
+    }
+    &__flechaImg{
+        height: 16px;
+        width: 16px;
+    }
+}
+

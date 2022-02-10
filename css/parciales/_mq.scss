@@ -1,0 +1,156 @@
+/*MEDIA QUERY*/
+
+@media only screen and (max-width:1200px){   
+    .main{
+        &__contactContents{
+            font-size: 1.125rem;
+        }
+        &__contactP{
+            width: 450px;
+        }
+        &__envianos{
+            font-size: 1.125rem;
+        }
+        &__form{
+            margin-top: 30px;
+        }
+        &__formItem--size{
+            font-size: 1rem;
+        }
+        &__personaInfo{
+            height: 35px;
+        }
+        &__enviar{
+            font-size: 1rem;
+            padding: 8px 26px;   
+        }
+    }
+}
+
+@media only screen and (max-width:992px){
+    .main{
+        &__banner{
+            height: 60vh;
+            .main__bannerText{
+                font-size: 18px ;
+                width: 500px;
+                .main__bannerImg{
+                    width: 200px;
+                }
+            }
+        }
+        &__contact{
+            flex-direction: column-reverse;
+        }
+        &__contactContents{
+            width: 100vw;
+            font-size: 1rem;
+        }
+        &__contactP{
+            width:400px;
+        }
+        &__info{
+            width: 100vw;
+            display: flex;
+            align-items: center;
+        }
+        &__envianos{
+            font-size: 16px;
+            width: 400px;   
+        }
+        &__form{
+            width: 400px;
+        }
+        &__formItem--size{
+            width: 50%;
+            font-size: 1rem;
+            padding: 0 10px;
+        }
+        &__personaInfo{
+            height: 35px;
+        }
+        &__formItem{
+            display: block;
+            margin-top: 30px;
+        }
+        &__enviar{
+            font-size: 1rem;
+            padding: 8px 26px;   
+        }
+    }
+}
+
+@media only screen and (max-width:768px){
+    
+    .main{
+        &__subsection{
+            .main__subsectionText{
+                width: 80%;
+            }
+            .main__subsectionImg{
+                width: 80%;
+                }
+            }
+        }
+        .footer{
+            background-color:#75B8C8;
+            padding: 30px 0;
+            flex-direction: column;
+              ul{
+                  list-style: none;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: center;
+                  padding: 0;
+                  margin: 0;
+                  li{
+                      margin: 0 10px;
+                      a{
+                          img{
+                              width: 35px;
+                          }
+                      }
+                  }
+              }  
+            p{
+                font-size: 1rem;
+                text-align: center;
+                margin: 15px 0;
+            }
+        }
+    }
+
+@media only screen and (max-width:470px){
+    .main{
+        &__banner{
+            .main__bannerText{
+                font-size: 16px ;
+                width: 355px;
+                .main__bannerImg{
+                    width: 150px;
+                }
+            }
+        }
+        &__contactContents{
+            font-size: 0.875rem;
+        }
+        &__contactP{
+            width:360px;
+        }
+        &__envianos{
+            font-size: 0.875rem;
+            width: 360px;   
+        }
+        &__form{
+            width: 360px;
+        }
+        &__formItem--size{
+            font-size: 0.875rem;
+        }        
+        &__enviar{
+            font-size: 0.875rem;
+        }
+    }
+
+
+}
