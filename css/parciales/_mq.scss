@@ -2,14 +2,8 @@
 
 @media only screen and (max-width:1200px){   
     .main{
-        &__contactContents{
-            font-size: 1.125rem;
-        }
         &__contactP{
             width: 450px;
-        }
-        &__envianos{
-            font-size: 1.125rem;
         }
         &__form{
             margin-top: 30px;
@@ -33,7 +27,7 @@
         &__menu{
             .menuLista{
                 .menuItem{
-                    font-size: 19px;
+                    font-size: $header-fontSz992;
                 }
             }
         }
@@ -43,11 +37,33 @@
         &__banner{
             height: 60vh;
             .main__bannerText{
-                font-size: 18px ;
+                font-size: $banner-fontSz992;
                 width: 500px;
                 .main__bannerImg{
                     width: 200px;
                 }
+            }
+        }
+
+        &__subsection{
+            padding: 80px 0;
+            .main__subsectionText{
+                width: 100%;
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                h3{
+                    font-size: $h3-fontSz992;
+                }
+                p{
+                    font-size: $p-fontSz992;
+                }
+            }
+            .main__subsectionImg{
+                width: 90%;
+            }
+            .main__subsectionImgText{
+                font-size: $h4-fontSz992;
             }
         }
         &__contact{
@@ -186,11 +202,28 @@
     .main{
         &__banner{
             .main__bannerText{
-                font-size: 16px ;
+                font-size: $banner-fontSz470;
                 width: 355px;
                 .main__bannerImg{
                     width: 150px;
                 }
+            }
+        }
+        &__subsection{
+            .main__subsectionText{
+                h2{
+                    font-size: $h2-fontSz470;
+                }
+                h3{
+                    font-size: $h3-fontSz470;
+                }
+                p{
+                    font-size: $p-fontSz470;
+                }
+            }
+    
+            .main__subsectionImgText{
+                font-size: $h4-fontSz470;
             }
         }
         &__contactContents{

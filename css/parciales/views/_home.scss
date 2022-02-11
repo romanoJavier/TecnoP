@@ -1,3 +1,5 @@
+@import "../utilities/variables";
+
 .main{
     &__banner{
         width: 100%; 
@@ -13,7 +15,7 @@
         justify-content: center;
         flex-wrap: wrap;
         .main__bannerText{
-            font-size: 22px ;
+            font-size: $banner-fontSz ;
             color: #75B8C8;
             width: 700px;
             display: inline-flex;
@@ -23,7 +25,7 @@
             }
             .main__BannerParrafo{
                 margin: 20px 0;
-                font-weight: 600;
+                font-weight: $bold600;
                 text-shadow: 5px 5px 5px #090C02;
             }    
         }
@@ -46,10 +48,17 @@
             width: 100%;
             h2{
                 color: #220C10;
-                font-size: $title-Size;
+                font-size: $h2-fontSz;
                 span{
-                    font-weight: 600;
+                    font-weight: $bold600;
                 }
+            }
+            h3{
+                font-size: $h3-fontSz;
+                font-weight: $bold600;
+            }
+            p{
+                font-size: $p-fontSz;
             }
         }
             
@@ -63,6 +72,8 @@
         .main__subsectionImgText{
             text-align: center;
             margin-top: 10px;
+            font-size: $h4-fontSz;
+            font-weight: 600;
         }
     }
 }

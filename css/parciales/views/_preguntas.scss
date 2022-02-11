@@ -7,6 +7,12 @@
         flex-direction: column;
         align-items: center;
         color: #220C10;
+        h2{
+            font-size: $h2-fontSz;
+            span{
+                font-weight: $bold600;
+            }
+        }
     }
     &__preguntas{
         font-size: 1.25rem;

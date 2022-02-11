@@ -3,8 +3,11 @@
 }
 
 .textoprincipal h2{
-    font-size: $title-Size;
+    font-size: $h2-fontSz;
     text-align: center;
+    span{
+        font-weight: $bold600;
+    }
     
 }
 .card--borderBot{

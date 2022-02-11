@@ -11,7 +11,7 @@
         padding: 0 15px 0 15px;
         width: 570px;
         h2{
-            font-size: $title-Size;
+            font-size: $h2-fontSz;
             margin-bottom: 30px;
         }
         ul{
@@ -20,6 +20,7 @@
             margin: 0;
             li{
                 margin-bottom: 5px;
+                font-size: $p-fontSz;
             }
         }
     }
@@ -53,6 +54,8 @@
                 padding-left: 15px ;                    
                     p{
                         margin: 0;
+                        font-size: $p-fontSz;
+                        font-weight: $bold600;
                     }
                 }
             }
@@ -64,9 +67,10 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-bottom: 5rem;
+
         .imagen{
             width: 570px;
-            padding: 0 15px 0 15px;
+            padding: 0 15px 40px 15px;
             img{
                 width: 100%;
             }
@@ -74,8 +78,13 @@
         .texto{
             width: 570px;
             padding: 0 15px 0 15px;
-            h2{
-                font-size: 30px;
+            h3{
+                font-size: $h3-fontSzCamera;
+                margin-bottom: 30px;
+            }
+            p{
+                font-size: $p-fontSz;
+                margin-bottom: 5px;
             }
         }
     }
