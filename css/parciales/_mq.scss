@@ -103,11 +103,15 @@
         &__enviar{
             font-size: 1rem;
             padding: 8px 26px;   
+        } 
+        &__galeria{
+            max-width: 800px;
         }
+            
     }
 }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:767px){
     .header{
         justify-content: space-between;
         &__logo{
@@ -158,6 +162,9 @@
                 width: 80%;
                 }
             }
+            &__galeria{
+                max-width: 600px;
+            }
         }
         .footer{
             background-color:#75B8C8;
@@ -186,6 +193,8 @@
             }
         }
     }
+
+    
 
 @media only screen and (max-width:470px){
     .header{

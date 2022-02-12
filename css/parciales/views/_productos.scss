@@ -1,64 +1,78 @@
-
-
-.textoprincipal h2{
-    font-size: $h2-fontSz;
-    text-align: center;
-    span{
-        font-weight: $bold600;
-    }
-}
-    
 .main{
-    &__contenedor{
-        border: 1px solid blue;
-        .fila{
-            border: 1px solid red;
-            .columna{
-                border: 1px solid green;
-                .carta{
-                    border: 1px solid violet;
-                    .imagen{
-                        border: 1px solid black;
-                        img{
-                            width: 80%;
-                        }
-                    }
+    &__galeria{
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        .presentacionGaleria{
+            text-align: center;
+            padding-bottom: 40px;
+            h2{
+                font-size: $h2-fontSz;
+                padding-bottom: 10px;
+                span{
+                    font-weight: $bold600;
                 }
+            }
+            h3{
+                font-size: $h3-fontSz;
             }
         }
     }
-
+    .container-fluid{
+    max-width: 100%;
+        .row > *{
+            padding: 0;
+            .tarjeta{
+                border: 1px solid #b9c8ce;
+                border-radius: 4px;
+                width: max-content;
+                background-color: #fff;
+                cursor:pointer;
+                transition: all 0.4s;
+                .muestra{
+                    width: 230px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .informacion{
+                    margin-top: 5px;
+                    width: 230px;
+                    h4{
+                        height: 45px;
+                        font-size: 16px;
+                        font-weight: 600;
+                        padding-left: 5px ;
+                        margin: 0 0 5px 0;
+                    }
+                    p{
+                        padding-left: 5px;
+                        margin: 0;
+                    }
+                }
+                .comprar{
+                    text-align: center;
+                    padding: 20px 0 15px 0;
+                    button{
+                        padding: 4px 12px 6px 12px;
+                        border-radius: 3px;
+                        border: 0;
+                        background-color: $bg-color;
+                        font-weight: $bold600;
+                        color: #220C10;
+                        transition: all 0.2s;
+                    }
+                    button:hover{
+                       background-color: #75B8C8;
+                       color: #CDD3D5;
+                    }
+                }
+            }
+            .tarjeta:hover{
+                box-shadow: 1px 1px 10px #75797a;
+            }
+        }
+    }
 }
 
 
-
-/*
-.card{
-    background-color: #75B8C8 ;
-}
-
-
-}
-.card--borderBot{
-    border-bottom: #75B8C8 solid 2px;
-}
-
-.colsize{
-    width: max-content;
-    padding-bottom: 20px;
-}
-
-.border__card{
-    border: #75B8C8 solid 2px;
-}
-
-.btn-primary{
-    background-color: #75B8C8;
-    border:#5ea4b6 solid 1px ;
-}
-
-.btn-primary:hover{
-    background-color: #5ea4b6;
-    border:#5ea4b6 solid 1px ;
-}
-*/
