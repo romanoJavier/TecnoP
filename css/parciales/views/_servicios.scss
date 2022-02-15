@@ -1,3 +1,4 @@
+
 .main{
     &__servicios{
         display: flex;
@@ -9,7 +10,8 @@
     }
     &__serviciosPrincipales{
         padding: 0 15px 0 15px;
-        width: 570px;
+        max-width: 570px;
+        width: 100%;
         h2{
             font-size: $h2-fontSz;
             margin-bottom: 30px;
@@ -24,44 +26,58 @@
             }
         }
     }
-    &__serviciosDesplegable{
-        width: 570px;
-        padding: 0 15px 0 15px;
-        ul{
-            list-style: none;
-            padding: 0;
-            width: 500px;
-            padding-top: 70px;
-            li{
-                display: flex;
-                align-items: center;
-                border: black 1px solid;
-                height: 50px;
-                margin-bottom: 15px;
-                .flecha{
-                    border-right: 1px solid black;
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    padding: 0 15px 0 15px;
-                    img{
-                        height: 16px;
-                        width: 16px;
-                        
-                    }
-                }
-                .texto{
-                padding-left: 15px ;                    
-                    p{
-                        margin: 0;
-                        font-size: $p-fontSz;
-                        font-weight: $bold600;
-                    }
-                }
-            }
-        }
-    }
 
+    &__accordion{
+        max-width: 570px;
+        width: 100%;
+        padding: 0 15px 0 15px;
+        padding-top: 80px;
+        
+        .accordionItem{
+            margin-bottom: 15px;
+            z-index: 0;
+            .accordionHeader{
+                .accordionButton{
+                    background-color:$bg-color;
+                    border: 3px solid black;
+                    font-size: $h4-fontSz;
+                    padding: 10px 15px 13px 50px;
+                }
+                .accordionButton:not(.collapsed){
+                    color: #220C10;
+                    background-color: $bg-color;
+                }
+                .accordionButton:focus {
+                    box-shadow: none;
+                    z-index: 0;
+                }
+                .accordionButton::after {
+                    position: absolute;
+                    left: 0;
+                    top: 15px;
+                    margin-left: 13px;
+                    background-image: url("../../../src/multimedia/fotos/flechadown.png");
+                  }
+                .accordionButton:hover {
+                    z-index: 0;
+                  }
+                }
+                .accordeonBody{
+                    background-color: $bg-color;
+                    border-top: 0;
+                    border-left: 2px solid #a0a8aa;
+                    border-right: 2px solid #a0a8aa;
+                    border-bottom: 2px solid #a0a8aa;
+                    font-size: $p-fontSz;
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        list-style: none;
+                    }
+                    }
+            }
+
+        }
     &__camaraService{
         display: flex;
         justify-content: center;
@@ -69,14 +85,16 @@
         padding-bottom: 5rem;
 
         .imagen{
-            width: 570px;
+            max-width: 570px;
+            width: 100%;
             padding: 0 15px 40px 15px;
             img{
                 width: 100%;
             }
         } 
         .texto{
-            width: 570px;
+            max-width: 570px;
+            width: 100%;
             padding: 0 15px 0 15px;
             h3{
                 font-size: $h3-fontSzCamera;

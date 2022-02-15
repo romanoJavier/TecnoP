@@ -583,7 +583,8 @@ body {
 
 .main__serviciosPrincipales {
   padding: 0 15px 0 15px;
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
 }
 
 .main__serviciosPrincipales h2 {
@@ -602,55 +603,61 @@ body {
   font-size: 1.125rem;
 }
 
-.main__serviciosDesplegable {
-  width: 570px;
+.main__accordion {
+  max-width: 570px;
+  width: 100%;
   padding: 0 15px 0 15px;
+  padding-top: 80px;
 }
 
-.main__serviciosDesplegable ul {
-  list-style: none;
-  padding: 0;
-  width: 500px;
-  padding-top: 70px;
-}
-
-.main__serviciosDesplegable ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border: black 1px solid;
-  height: 50px;
+.main__accordion .accordionItem {
   margin-bottom: 15px;
+  z-index: 0;
 }
 
-.main__serviciosDesplegable ul li .flecha {
-  border-right: 1px solid black;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 15px 0 15px;
+.main__accordion .accordionItem .accordionHeader .accordionButton {
+  background-color: #CDD3D5;
+  border: 3px solid black;
+  font-size: 1.25rem;
+  padding: 10px 15px 13px 50px;
 }
 
-.main__serviciosDesplegable ul li .flecha img {
-  height: 16px;
-  width: 16px;
+.main__accordion .accordionItem .accordionHeader .accordionButton:not(.collapsed) {
+  color: #220C10;
+  background-color: #CDD3D5;
 }
 
-.main__serviciosDesplegable ul li .texto {
-  padding-left: 15px;
+.main__accordion .accordionItem .accordionHeader .accordionButton:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 0;
 }
 
-.main__serviciosDesplegable ul li .texto p {
-  margin: 0;
+.main__accordion .accordionItem .accordionHeader .accordionButton::after {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  margin-left: 13px;
+  background-image: url("../../../src/multimedia/fotos/flechadown.png");
+}
+
+.main__accordion .accordionItem .accordionHeader .accordionButton:hover {
+  z-index: 0;
+}
+
+.main__accordion .accordionItem .accordeonBody {
+  background-color: #CDD3D5;
+  border-top: 0;
+  border-left: 2px solid #a0a8aa;
+  border-right: 2px solid #a0a8aa;
+  border-bottom: 2px solid #a0a8aa;
   font-size: 1.125rem;
-  font-weight: 600;
+}
+
+.main__accordion .accordionItem .accordeonBody ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .main__camaraService {
@@ -666,7 +673,8 @@ body {
 }
 
 .main__camaraService .imagen {
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   padding: 0 15px 40px 15px;
 }
 
@@ -675,7 +683,8 @@ body {
 }
 
 .main__camaraService .texto {
-  width: 570px;
+  max-width: 570px;
+  width: 100%;
   padding: 0 15px 0 15px;
 }
 
@@ -691,6 +700,22 @@ body {
 
 /*MEDIA QUERY*/
 @media only screen and (max-width: 1200px) {
+  .main__servicios {
+    padding-top: 3rem;
+  }
+  .main__serviciosPrincipales {
+    padding: 0 15px 0 15px;
+    width: 495px;
+  }
+  .main__accordion {
+    width: 495px;
+  }
+  .main__camaraService .imagen {
+    width: 495px;
+  }
+  .main__camaraService .texto {
+    width: 495px;
+  }
   .main__contactP {
     width: 450px;
   }
@@ -746,6 +771,18 @@ body {
   }
   .main__subsection .main__subsectionImgText {
     font-size: 1.063rem;
+  }
+  .main__serviciosPrincipales {
+    width: 380px;
+  }
+  .main__accordion {
+    width: 380px;
+  }
+  .main__camaraService .imagen {
+    width: 380px;
+  }
+  .main__camaraService .texto {
+    width: 380px;
   }
   .main__contact {
     -webkit-box-orient: vertical;
@@ -855,6 +892,18 @@ body {
   }
   .main__galeria {
     max-width: 600px;
+  }
+  .main__serviciosPrincipales {
+    width: 80%;
+  }
+  .main__accordion {
+    width: 80%;
+  }
+  .main__camaraService .imagen {
+    width: 80%;
+  }
+  .main__camaraService .texto {
+    width: 80%;
   }
   .footer {
     background-color: #75B8C8;

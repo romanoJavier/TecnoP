@@ -1,7 +1,29 @@
 /*MEDIA QUERY*/
 
 @media only screen and (max-width:1200px){   
+    
     .main{
+        &__servicios{
+            padding-top: 3rem;
+        }
+        &__serviciosPrincipales{
+            padding: 0 15px 0 15px;
+            width: 495px;
+        }
+    
+        &__accordion{
+            width: 495px;
+        }
+
+        &__camaraService{
+            .imagen{
+                width: 495px;
+            } 
+            .texto{
+                width: 495px;
+            }
+        }
+
         &__contactP{
             width: 450px;
         }
@@ -66,6 +88,24 @@
                 font-size: $h4-fontSz992;
             }
         }
+
+        &__serviciosPrincipales{
+            width: 380px;
+        }
+    
+        &__accordion{
+            width: 380px;
+        }
+
+        &__camaraService{
+            .imagen{
+                width: 380px;
+            } 
+            .texto{
+                width: 380px;
+            }
+        }
+
         &__contact{
             flex-direction: column-reverse;
         }
@@ -162,10 +202,28 @@
                 width: 80%;
                 }
             }
-            &__galeria{
-                max-width: 600px;
-            }
+        &__galeria{
+            max-width: 600px;
         }
+        &__serviciosPrincipales{
+            width: 80%;
+        }
+        
+        &__accordion{
+            width: 80%;
+        }
+    
+        &__camaraService{
+           .imagen{
+            width: 80%;
+            } 
+            .texto{
+                width: 80%;
+            }
+        }  
+    }
+
+
         .footer{
             background-color:#75B8C8;
             padding: 30px 0;
