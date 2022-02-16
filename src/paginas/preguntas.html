@@ -54,38 +54,136 @@
                 <span>T</span>ecno<span>P</span>reguntas
             </h2>
 
-            <article class="main__preguntas">
-                <ul class="main__preguntasList">
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Cuales son los servicios principales que ofrecemos en TecnoP</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Cual es el area de cobertura del Soporte Tecnico?</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Cual es el horario de prestacion del soporte tecnico?</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Atienden en horario de prestacion del soporte tecnico?</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Tienen Garantia de las reparaciones?</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿Si vivo fuera de Capital Federal, es posible llevar la PC al taller de TecnoP?</p>
-                    </li>
-                    <li class="main__preguntasItem">
-                        <div class="main__flecha"><img src="../multimedia/fotos/flecha.png" alt="" class="main__flechaImg">
-                        </div><p class="main__preguntasText">¿El diagnostico en el laboratorio tiene algun costo?</p></li>
-                </ul>
+            <div class="accordion accordeonPreguntas" id="accordionExample">
+                
+                <div class="accordion-item preguntasItem">
+                  
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingOne">
+                    
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Que servicios ofrecemos en TecnoP?
+                        </button>
 
-            </article>
+                    </h4>
+                    
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            Reparacion de computadoras. Servicio Tecnico de Computadoras.
+                            Reparacion de PC y Notebooks. Instalación de Redes Cableadas y Wi Fi.
+                            Soporte Tecnico de Redes. Instalacion de sistema operativo. entre otros. 
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingTwo">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Cuál es el área de cobertura del Soporte Tecnico?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            El área de cobertura es toda Capital Federal. 
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingThree">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ¿Cuál es el horario de prestación del soporte tecnico?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            El horario de atención es de Lunes a Viernes de 9 a 20 horas con excepción de los días feriados. Sabados de 10 a 16 horas. 
+                        </div>     
+                  </div>
+
+                </div>
+
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingFour">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            ¿Atienden en horarios fuera del horario normal de atencion?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            Sí. Siempre y cuando ésto sea pactado con el cliente. 
+                        </div>     
+                  </div>
+
+                </div>
+
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingFive">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            ¿Tienen Garantia de las reparaciones?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            Si. El tiempo de garantía de la mano de obra es de 30 días desde la fecha de reparacion. El hardware vendido tendrá el tiempo de garantía del propio repuesto. 
+                        </div>     
+                  </div>
+
+                </div>
+
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingSix">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            ¿Si vivo fuera de Capital Federal, es posible llevar la PC al taller de TecnoP?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            Sí.
+                        </div>     
+                  </div>
+
+                </div>
+
+                <div class="accordion-item preguntasItem">
+
+                    <h4 class="accordion-header preguntasHeader" id="flush-headingSeven">
+
+                        <button class="accordion-button collapsed preguntasButton" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                            ¿El diagnóstico en el laboratorio tiene algún costo?
+                        </button>
+
+                    </h4>
+
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body preguntasBody">
+                            No. El diagnóstico que se realiza en el laboratorio no tiene costo alguno. Es completamente gratuito. Siempre y cuando el cliente traiga y retire la pc del taller. 
+                  </div>
+
+                </div>
+
+              </div>
 
         </section>
     </main>

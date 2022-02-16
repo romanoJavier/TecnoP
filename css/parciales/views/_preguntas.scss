@@ -2,43 +2,143 @@
 
 .main{
     &__tencoPreguntas{
-        padding: 80px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #220C10;
+        padding: 40px 0;
+        max-width: 1040px;
+        width: 100%;
+        margin: auto;
         h2{
             font-size: $h2-fontSz;
+            width: max-content;
+            position: relative;
+            text-align: center;
             span{
                 font-weight: $bold600;
             }
         }
+        h2::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #75B8C8;
+            z-index: -1;
+        }
+        .accordeonPreguntas{
+            padding: 40px 0;
+            .preguntasItem{
+                margin-bottom: 15px;
+                z-index: 0;
+                .preguntasHeader{
+                    .preguntasButton{
+                        background-color:$bg-color;
+                        border: 3px solid black;
+                        font-size: $h4-fontSz;
+                        padding: 10px 15px 13px 50px;
+                    }
+                    .preguntasButton:not(.collapsed){
+                        color: #220C10;
+                        background-color: $bg-color;
+                    }
+                    .preguntasButton:focus {
+                        box-shadow: none;
+                        z-index: 0;
+                    }
+                    .preguntasButton::after {
+                        position: absolute;
+                        left: 0;
+                        top: 15px;
+                        margin-left: 13px;
+                        background-image: url("../../../src/multimedia/fotos/flechadown.png");
+                      }
+                    .preguntasButton:hover {
+                        z-index: 0;
+                      }
+                    }
+                    .preguntasBody{
+                        background-color: $bg-color;
+                        border-top: 0;
+                        border-left: 2px solid #a0a8aa;
+                        border-right: 2px solid #a0a8aa;
+                        border-bottom: 2px solid #a0a8aa;
+                        font-size: $p-fontSz;
+                        }
+                }
+    
+            }
+        }
     }
-    &__preguntas{
-        font-size: 1.25rem;
-    }
-    &__preguntasList{
-        list-style: none;
-    }
-    &__preguntasItem{
-        margin-top: 20px;
-    }
-    &__preguntasText{
-        display: inline-block;
-        margin: 0;
-        padding: 10px 10px 12px 10px;
-        border: 1px solid #220C10;
-        border-left: none;
-        width: 700px;
-    }
-    &__flecha{
-        display: inline-block;
-        padding: 10px 15px 12px 15px;
-        border: 1px solid #220C10;
-    }
-    &__flechaImg{
-        height: 16px;
-        width: 16px;
-    }
-}
 
+
+    @media only screen and (max-width:1200px){   
+    .main{
+        &__tencoPreguntas{
+            max-width: 1040px;
+            width: 80%;
+            }
+        }
+    }
+
+    @media only screen and (max-width:992px){
+        .main{
+            &__tencoPreguntas{
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                h2::after{
+                    height: 3px;
+                }
+                .accordeonPreguntas{
+                    padding: 30px 0;
+                    .preguntasItem{
+                        .preguntasHeader{
+                            .preguntasButton{
+                                font-size: $h4-fontSz992;
+                            }
+                            }
+                            .preguntasBody{
+                                font-size: $p-fontSz992;
+                                }
+                        }
+            
+                    }
+                }
+            }
+    }
+
+
+    @media only screen and (max-width:767px){
+        .main{
+            &__tencoPreguntas{
+                width: 90%;
+                }
+            }
+    }
+
+    @media only screen and (max-width:470px){
+        .main{
+            &__tencoPreguntas{
+                h2{
+                    font-size: $h2-fontSz470;
+                }
+                h2::after{
+                    height: 3px;
+                }
+                .accordeonPreguntas{
+                    padding: 20px 0;
+                    .preguntasItem{
+                        .preguntasHeader{
+                            .preguntasButton{
+                                font-size: $h4-fontSz470;
+                            }
+                            }
+                            .preguntasBody{
+                                font-size: $p-fontSz470;
+                                }
+                        }
+            
+                    }
+                }
+        }   
+    }

@@ -418,58 +418,131 @@ body {
 
 /*PREGUNTAS*/
 .main__tencoPreguntas {
-  padding: 80px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #220C10;
+  padding: 40px 0;
+  max-width: 1040px;
+  width: 100%;
+  margin: auto;
 }
 
 .main__tencoPreguntas h2 {
   font-size: 2.625rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  text-align: center;
 }
 
 .main__tencoPreguntas h2 span {
   font-weight: 600;
 }
 
-.main__preguntas {
+.main__tencoPreguntas h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #75B8C8;
+  z-index: -1;
+}
+
+.main__tencoPreguntas .accordeonPreguntas {
+  padding: 40px 0;
+}
+
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem {
+  margin-bottom: 15px;
+  z-index: 0;
+}
+
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
+  background-color: #CDD3D5;
+  border: 3px solid black;
   font-size: 1.25rem;
+  padding: 10px 15px 13px 50px;
 }
 
-.main__preguntasList {
-  list-style: none;
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton:not(.collapsed) {
+  color: #220C10;
+  background-color: #CDD3D5;
 }
 
-.main__preguntasItem {
-  margin-top: 20px;
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 0;
 }
 
-.main__preguntasText {
-  display: inline-block;
-  margin: 0;
-  padding: 10px 10px 12px 10px;
-  border: 1px solid #220C10;
-  border-left: none;
-  width: 700px;
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton::after {
+  position: absolute;
+  left: 0;
+  top: 15px;
+  margin-left: 13px;
+  background-image: url("../../../src/multimedia/fotos/flechadown.png");
 }
 
-.main__flecha {
-  display: inline-block;
-  padding: 10px 15px 12px 15px;
-  border: 1px solid #220C10;
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton:hover {
+  z-index: 0;
 }
 
-.main__flechaImg {
-  height: 16px;
-  width: 16px;
+.main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
+  background-color: #CDD3D5;
+  border-top: 0;
+  border-left: 2px solid #a0a8aa;
+  border-right: 2px solid #a0a8aa;
+  border-bottom: 2px solid #a0a8aa;
+  font-size: 1.125rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main__tencoPreguntas {
+    max-width: 1040px;
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main__tencoPreguntas h2 {
+    font-size: 2.313rem;
+  }
+  .main__tencoPreguntas h2::after {
+    height: 3px;
+  }
+  .main__tencoPreguntas .accordeonPreguntas {
+    padding: 30px 0;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
+    font-size: 1.063rem;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
+    font-size: 1.063rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main__tencoPreguntas {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main__tencoPreguntas h2 {
+    font-size: 2rem;
+  }
+  .main__tencoPreguntas h2::after {
+    height: 3px;
+  }
+  .main__tencoPreguntas .accordeonPreguntas {
+    padding: 20px 0;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
+    font-size: 1rem;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
+    font-size: 1rem;
+  }
 }
 
 .main__galeria {
