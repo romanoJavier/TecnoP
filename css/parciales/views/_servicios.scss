@@ -3,7 +3,7 @@
     &__servicios{
         display: flex;
         justify-content: center;
-        padding-top: 5rem;
+        padding-top: 40px;
         padding-bottom: 3rem;
         flex-wrap: wrap;
         
@@ -13,8 +13,20 @@
         max-width: 570px;
         width: 100%;
         h2{
+            width: max-content;
             font-size: $h2-fontSz;
             margin-bottom: 30px;
+            position: relative;
+        }
+        h2::after{
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #75B8C8;
+            z-index: -1;
         }
         ul{
             list-style: none;
@@ -23,6 +35,19 @@
             li{
                 margin-bottom: 5px;
                 font-size: $p-fontSz;
+                position: relative;
+                padding-left: 10px;
+            }
+            li::after{
+                content: "";
+                position: absolute;
+                top: 16px;
+                left: 0;
+                width: 6px;
+                height: 5px;
+                border-radius: 100%;
+                background-color: #75B8C8;
+                z-index: -1;
             }
         }
     }

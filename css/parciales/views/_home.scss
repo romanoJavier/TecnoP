@@ -49,9 +49,22 @@
             h2{
                 color: #220C10;
                 font-size: $h2-fontSz;
+                width: max-content;
+                position: relative;
                 span{
                     font-weight: $bold600;
                 }
+                
+            }
+            h2::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #75B8C8;
+                z-index: -1;
             }
             h3{
                 font-size: $h3-fontSz;

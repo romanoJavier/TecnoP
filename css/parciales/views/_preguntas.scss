@@ -3,14 +3,13 @@
 .main{
     &__tencoPreguntas{
         padding: 40px 0;
-        max-width: 1040px;
+        max-width: 1200px;
         width: 100%;
         margin: auto;
         h2{
             font-size: $h2-fontSz;
             width: max-content;
             position: relative;
-            text-align: center;
             span{
                 font-weight: $bold600;
             }

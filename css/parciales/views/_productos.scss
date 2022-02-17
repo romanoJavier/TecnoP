@@ -4,22 +4,32 @@
         margin: auto;
         padding: 40px 0;
         .presentacionGaleria{
-            text-align: center;
             padding-bottom: 40px;
             h2{
+                width: max-content;
+                position: relative;
                 font-size: $h2-fontSz;
-                padding-bottom: 10px;
                 span{
                     font-weight: $bold600;
                 }
+            }
+            h2::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #75B8C8;
+                z-index: -1;
             }
             h3{
                 font-size: $h3-fontSz;
             }
         }
     }
-    .container-fluid{
-    max-width: 100%;
+    .contenedorTienda{
+        max-width: 100%;
         .row > *{
             padding: 0;
             .tarjeta{
