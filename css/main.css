@@ -117,7 +117,58 @@ body {
 }
 
 /*FOOTER*/
-.footer {
+.footer__banner {
+  background: #cbf5ff;
+  background: -webkit-gradient(linear, left top, right top, from(#cbf5ff), to(#33adc8));
+  background: linear-gradient(90deg, #cbf5ff 0%, #33adc8 100%);
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__banner .contenedor {
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__banner .contenedor .texto {
+  padding: 40px 40px;
+}
+
+.footer__banner .contenedor .texto h3 {
+  font-size: 27px;
+}
+
+.footer__banner .contenedor .texto p {
+  font-size: 18px;
+}
+
+.footer__banner .contenedor .texto h4 {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.footer__banner .contenedor .foto {
+  width: 500px;
+}
+
+.footer__banner .contenedor .foto img {
+  width: 100%;
+}
+
+.footer .social {
   background-color: #75B8C8;
   padding: 30px 0;
   display: -webkit-box;
@@ -127,7 +178,7 @@ body {
       justify-content: space-around;
 }
 
-.footer ul {
+.footer .social ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,18 +197,95 @@ body {
   margin: 0;
 }
 
-.footer ul li {
+.footer .social ul li {
   margin: 0 10px;
 }
 
-.footer ul li a img {
+.footer .social ul li a img {
   width: 40px;
 }
 
-.footer p {
+.footer .social p {
   font-size: 1rem;
   text-align: center;
   margin: 15px 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .footer__banner .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__banner .contenedor .texto {
+    padding: 40px 40px;
+  }
+  .footer__banner .contenedor .texto h3 {
+    font-size: 24px;
+  }
+  .footer__banner .contenedor .texto p {
+    font-size: 16px;
+  }
+  .footer__banner .contenedor .texto h4 {
+    font-size: 17px;
+  }
+  .footer__banner .contenedor .foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__banner .contenedor .foto img {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .footer__banner .contenedor {
+    width: 360px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__banner .contenedor .texto {
+    padding: 40px 40px;
+  }
+  .footer__banner .contenedor .texto h3 {
+    font-size: 24px;
+  }
+  .footer__banner .contenedor .texto p {
+    font-size: 16px;
+  }
+  .footer__banner .contenedor .texto h4 {
+    font-size: 17px;
+  }
+  .footer__banner .contenedor .foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__banner .contenedor .foto img {
+    width: 70%;
+  }
 }
 
 /*BANNER SECUNDARIO*/
@@ -978,7 +1106,7 @@ body {
   .main__camaraService .texto {
     width: 80%;
   }
-  .footer {
+  .footer .social {
     background-color: #75B8C8;
     padding: 30px 0;
     -webkit-box-orient: vertical;
@@ -986,7 +1114,7 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .footer ul {
+  .footer .social ul {
     list-style: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1001,13 +1129,13 @@ body {
     padding: 0;
     margin: 0;
   }
-  .footer ul li {
+  .footer .social ul li {
     margin: 0 10px;
   }
-  .footer ul li a img {
+  .footer .social ul li a img {
     width: 35px;
   }
-  .footer p {
+  .footer .social p {
     font-size: 1rem;
     text-align: center;
     margin: 15px 0;
