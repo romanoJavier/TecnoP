@@ -2,72 +2,131 @@
 
 .main{
     &__contact{
+        padding: 40px 0;
+        max-width: 1200px;
         display: flex;
-        color: #220C10;
-    }   
-    &__contactContents{
-        width: 50vw;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        
-    }
-    &__contactP{
-        margin-top: 20px;
-        width: 500px;
-        font-size: $p-fontSz;
-    }
-    &__contactP--marginBot{
-        margin-bottom: 20px;
-    }
-    &__info{
-        width: 50vw;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    &__envianos{
-        margin-top: 20px;
-        h2{
-            font-size: $h2-fontSz;
+        margin: auto;
+        .contactInfo{
+            width: 100%;
+            h2{
+                font-size: $h2-fontSz;
+                width: max-content;
+                position: relative;
+            }
+            h2::after{
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 4px;
+                background-color: #75B8C8;
+                z-index: -1;
+            }
+            .envianosP{
+                font-size: $p-fontSz;
+            }
         }
-        p{
+        .form{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .formItem--size{
+            width: 100%;
             font-size: $p-fontSz;
+            padding: 7px 10px;
         }
-        
+
+        .formItem{
+            margin-bottom: 15px;
+        }
+
+        .enviar{
+            background-color: #75B8C8;
+            border: 0;
+            border-radius: 3px;
+            font-weight: $bold600;
+        }
+        .enviar:hover{
+            background-color: #5ea8bb;
+        }
     }
-    &__envianosP{
-        margin-left: 0;
+}
+
+@media only screen and (max-width:1200px){
+
+    .main{
+        &__contact{
+            max-width: 982px;
+        }
     }
-    &__form{
-        margin-top: 50px;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        box-shadow: 0px 5px 10px black;
+}
+
+@media only screen and (max-width:992px){
+
+    .main{
+        &__contact{
+            max-width: 757px;
+            .contactInfo{
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                .envianosP{
+                    font-size: $p-fontSz992;
+                }
+            }
+            .formItem--size{
+                font-size: $p-fontSz992;
+            }
+        }
     }
-    &__formItem--size{
-        width: 50%;
-        font-size: $p-fontSz;
-        padding: 0 10px;
+}
+
+@media only screen and (max-width:767px){
+
+    .main{
+        &__contact{
+            max-width: 460px;
+            .contactInfo{
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                .envianosP{
+                    font-size: $p-fontSz992;
+                }
+            }
+            .formItem--size{
+                font-size: $p-fontSz992;
+            }
+        }
     }
-    &__personaInfo{
-        height: 45px;
-    }
-    &__formItem{
-        display: block;
-        margin-top: 30px;
-    }
-    &__enviar{
-        margin-bottom: 30px;
-        border-radius: px;
-        background-color:#75B8C8;
-        border-color:#75B8C8;
-        font-size: $p-fontSz;
-        font-weight: $bold600;
-        text-align: center;
-        padding: 8px 48px;   
-        color: #CDD3D5;
+}
+
+@media only screen and (max-width:470px){
+
+    .main{
+        &__contact{
+            max-width: 310px;
+            .contactInfo{
+                width: 100%;
+                h2{
+                    font-size: $h2-fontSz470;
+                    width: max-content;
+                    position: relative;
+                }
+                h2::after{
+                    height: 3px;
+                }
+                .envianosP{
+                    font-size: $p-fontSz470;
+                }
+            }
+            .formItem--size{
+                font-size: $p-fontSz470;
+            }
+        }
     }
 }

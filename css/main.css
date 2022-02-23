@@ -463,105 +463,138 @@ body {
 
 /*CONTACTO*/
 .main__contact {
+  padding: 40px 0;
+  max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #220C10;
+  margin: auto;
 }
 
-.main__contactContents {
-  width: 50vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.main__contact .contactInfo {
+  width: 100%;
 }
 
-.main__contactP {
-  margin-top: 20px;
-  width: 500px;
-  font-size: 1.125rem;
-}
-
-.main__contactP--marginBot {
-  margin-bottom: 20px;
-}
-
-.main__info {
-  width: 50vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.main__envianos {
-  margin-top: 20px;
-}
-
-.main__envianos h2 {
+.main__contact .contactInfo h2 {
   font-size: 2.625rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
 }
 
-.main__envianos p {
+.main__contact .contactInfo h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #75B8C8;
+  z-index: -1;
+}
+
+.main__contact .contactInfo .envianosP {
   font-size: 1.125rem;
 }
 
-.main__envianosP {
-  margin-left: 0;
-}
-
-.main__form {
-  margin-top: 50px;
-  width: 80%;
+.main__contact .form {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 0px 5px 10px black;
-          box-shadow: 0px 5px 10px black;
 }
 
-.main__formItem--size {
-  width: 50%;
+.main__contact .formItem--size {
+  width: 100%;
   font-size: 1.125rem;
-  padding: 0 10px;
+  padding: 7px 10px;
 }
 
-.main__personaInfo {
-  height: 45px;
+.main__contact .formItem {
+  margin-bottom: 15px;
 }
 
-.main__formItem {
-  display: block;
-  margin-top: 30px;
-}
-
-.main__enviar {
-  margin-bottom: 30px;
-  border-radius: px;
+.main__contact .enviar {
   background-color: #75B8C8;
-  border-color: #75B8C8;
-  font-size: 1.125rem;
+  border: 0;
+  border-radius: 3px;
   font-weight: 600;
-  text-align: center;
-  padding: 8px 48px;
-  color: #CDD3D5;
+}
+
+.main__contact .enviar:hover {
+  background-color: #5ea8bb;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main__contact {
+    max-width: 982px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main__contact {
+    max-width: 757px;
+  }
+  .main__contact .contactInfo h2 {
+    font-size: 2.313rem;
+  }
+  .main__contact .contactInfo .envianosP {
+    font-size: 1.063rem;
+  }
+  .main__contact .formItem--size {
+    font-size: 1.063rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .main__contact {
+    max-width: 460px;
+  }
+  .main__contact .contactInfo h2 {
+    font-size: 2.313rem;
+  }
+  .main__contact .contactInfo .envianosP {
+    font-size: 1.063rem;
+  }
+  .main__contact .formItem--size {
+    font-size: 1.063rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main__contact {
+    max-width: 310px;
+  }
+  .main__contact .contactInfo {
+    width: 100%;
+  }
+  .main__contact .contactInfo h2 {
+    font-size: 2rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+  }
+  .main__contact .contactInfo h2::after {
+    height: 3px;
+  }
+  .main__contact .contactInfo .envianosP {
+    font-size: 1rem;
+  }
+  .main__contact .formItem--size {
+    font-size: 1rem;
+  }
 }
 
 /*PREGUNTAS*/
@@ -1233,25 +1266,6 @@ body {
   }
   .main__subsection .main__subsectionImgText {
     font-size: 1rem;
-  }
-  .main__contactContents {
-    font-size: 0.875rem;
-  }
-  .main__contactP {
-    width: 360px;
-  }
-  .main__envianos {
-    font-size: 0.875rem;
-    width: 360px;
-  }
-  .main__form {
-    width: 360px;
-  }
-  .main__formItem--size {
-    font-size: 0.875rem;
-  }
-  .main__enviar {
-    font-size: 0.875rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
