@@ -1,26 +1,4 @@
-/* header */
-/* 21px */
-/*19px */
-/* banner */
-/* 21px */
-/* 18px */
-/*16px */
-/* titulos (h1 - h6) */
-/* 42px */
-/* 37px */
-/* 32 */
-/* 21px */
-/* 18px */
-/* 17px */
-/* 32 */
-/* 20 */
-/* 17 */
-/* 16 */
-/* parrafos */
-/* negrita */
-/* 18px */
-/* 17px */
-/* 16px */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -33,10 +11,12 @@ body {
   position: relative;
 }
 
+/* FUENTE */
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/*HEADER*/
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -161,7 +141,7 @@ body {
 }
 
 .footer__banner .contenedor .foto {
-  width: 500px;
+  max-width: 500px;
 }
 
 .footer__banner .contenedor .foto img {
@@ -217,83 +197,6 @@ body {
   margin: 15px 0;
 }
 
-@media only screen and (max-width: 767px) {
-  .footer__banner .contenedor {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer__banner .contenedor .texto {
-    padding: 40px 40px;
-  }
-  .footer__banner .contenedor .texto h3 {
-    font-size: 24px;
-  }
-  .footer__banner .contenedor .texto p {
-    font-size: 16px;
-  }
-  .footer__banner .contenedor .texto h4 {
-    font-size: 17px;
-  }
-  .footer__banner .contenedor .foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer__banner .contenedor .foto img {
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .footer__banner .contenedor {
-    width: 360px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .footer__banner .contenedor .texto {
-    padding: 40px 40px;
-  }
-  .footer__banner .contenedor .texto h3 {
-    font-size: 24px;
-  }
-  .footer__banner .contenedor .texto p {
-    font-size: 16px;
-  }
-  .footer__banner .contenedor .texto h4 {
-    font-size: 17px;
-  }
-  .footer__banner .contenedor .foto {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .footer__banner .contenedor .foto img {
-    width: 70%;
-  }
-}
-
 /*BANNER SECUNDARIO*/
 .main__bannerDos {
   width: 100%;
@@ -328,29 +231,7 @@ body {
   z-index: -1;
 }
 
-/* header */
-/* 21px */
-/*19px */
-/* banner */
-/* 21px */
-/* 18px */
-/*16px */
-/* titulos (h1 - h6) */
-/* 42px */
-/* 37px */
-/* 32 */
-/* 21px */
-/* 18px */
-/* 17px */
-/* 32 */
-/* 20 */
-/* 17 */
-/* 16 */
-/* parrafos */
-/* negrita */
-/* 18px */
-/* 17px */
-/* 16px */
+/*BANNER Y SUBSECTION INDEX*/
 .main__banner {
   width: 100%;
   height: 100vh;
@@ -537,6 +418,7 @@ body {
   background-color: #5ea8bb;
 }
 
+/* BOTON DE CONTACTO Y MODAL */
 .boton {
   border: 0;
   position: fixed;
@@ -568,61 +450,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-@media only screen and (max-width: 1200px) {
-  .main__contact {
-    max-width: 982px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .main__contact {
-    max-width: 757px;
-  }
-  .main__contact .contactInfo h2 {
-    font-size: 2.313rem;
-  }
-  .main__contact .contactInfo .envianosP {
-    font-size: 1.063rem;
-  }
-  .main__contact .formItem--size {
-    font-size: 1.063rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .main__contact {
-    max-width: 460px;
-  }
-  .boton {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .main__contact {
-    max-width: 310px;
-  }
-  .main__contact .contactInfo {
-    width: 100%;
-  }
-  .main__contact .contactInfo h2 {
-    font-size: 2rem;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    position: relative;
-  }
-  .main__contact .contactInfo h2::after {
-    height: 3px;
-  }
-  .main__contact .contactInfo .envianosP {
-    font-size: 1rem;
-  }
-  .main__contact .formItem--size {
-    font-size: 1rem;
-  }
 }
 
 /*PREGUNTAS*/
@@ -704,55 +531,7 @@ body {
   font-size: 1.125rem;
 }
 
-@media only screen and (max-width: 1200px) {
-  .main__tencoPreguntas {
-    max-width: 1040px;
-    width: 80%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .main__tencoPreguntas h2 {
-    font-size: 2.313rem;
-  }
-  .main__tencoPreguntas h2::after {
-    height: 3px;
-  }
-  .main__tencoPreguntas .accordeonPreguntas {
-    padding: 30px 0;
-  }
-  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
-    font-size: 1.063rem;
-  }
-  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
-    font-size: 1.063rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .main__tencoPreguntas {
-    width: 90%;
-  }
-}
-
-@media only screen and (max-width: 470px) {
-  .main__tencoPreguntas h2 {
-    font-size: 2rem;
-  }
-  .main__tencoPreguntas h2::after {
-    height: 3px;
-  }
-  .main__tencoPreguntas .accordeonPreguntas {
-    padding: 20px 0;
-  }
-  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
-    font-size: 1rem;
-  }
-  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
-    font-size: 1rem;
-  }
-}
-
+/*PRODUCTOS*/
 .main__galeria {
   max-width: 1200px;
   margin: auto;
@@ -862,6 +641,7 @@ body {
           box-shadow: 1px 1px 10px #75797a;
 }
 
+/*SERVICIOS*/
 .main__servicios {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1039,21 +819,8 @@ body {
   .main__camaraService .texto {
     width: 495px;
   }
-  .main__contactP {
-    width: 450px;
-  }
-  .main__form {
-    margin-top: 30px;
-  }
-  .main__formItem--size {
-    font-size: 1rem;
-  }
-  .main__personaInfo {
-    height: 35px;
-  }
-  .main__enviar {
-    font-size: 1rem;
-    padding: 8px 26px;
+  .main__contact {
+    max-width: 982px;
   }
 }
 
@@ -1108,52 +875,37 @@ body {
     width: 380px;
   }
   .main__contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-  }
-  .main__contactContents {
-    width: 100vw;
-    font-size: 1rem;
-  }
-  .main__contactP {
-    width: 400px;
-  }
-  .main__info {
-    width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .main__envianos {
-    font-size: 16px;
-    width: 400px;
-  }
-  .main__form {
-    width: 400px;
-  }
-  .main__formItem--size {
-    width: 50%;
-    font-size: 1rem;
-    padding: 0 10px;
-  }
-  .main__personaInfo {
-    height: 35px;
-  }
-  .main__formItem {
-    display: block;
-    margin-top: 30px;
-  }
-  .main__enviar {
-    font-size: 1rem;
-    padding: 8px 26px;
+    max-width: 982px;
   }
   .main__galeria {
     max-width: 800px;
+  }
+  .main__contact {
+    max-width: 757px;
+  }
+  .main__contact .contactInfo h2 {
+    font-size: 2.313rem;
+  }
+  .main__contact .contactInfo .envianosP {
+    font-size: 1.063rem;
+  }
+  .main__contact .formItem--size {
+    font-size: 1.063rem;
+  }
+  .main__tencoPreguntas h2 {
+    font-size: 2.313rem;
+  }
+  .main__tencoPreguntas h2::after {
+    height: 3px;
+  }
+  .main__tencoPreguntas .accordeonPreguntas {
+    padding: 30px 0;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
+    font-size: 1.063rem;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
+    font-size: 1.063rem;
   }
 }
 
@@ -1228,6 +980,50 @@ body {
   .main__camaraService .texto {
     width: 80%;
   }
+  .main__contact {
+    max-width: 460px;
+  }
+  .main__tencoPreguntas {
+    width: 90%;
+  }
+  .boton {
+    display: none;
+  }
+  .footer__banner .contenedor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__banner .contenedor .texto {
+    padding: 40px 40px;
+  }
+  .footer__banner .contenedor .texto h3 {
+    font-size: 1.5rem;
+  }
+  .footer__banner .contenedor .texto p {
+    font-size: 1rem;
+  }
+  .footer__banner .contenedor .texto h4 {
+    font-size: 1.063rem;
+  }
+  .footer__banner .contenedor .foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__banner .contenedor .foto img {
+    width: 80%;
+  }
   .footer .social {
     background-color: #75B8C8;
     padding: 30px 0;
@@ -1294,6 +1090,67 @@ body {
   }
   .main__subsection .main__subsectionImgText {
     font-size: 1rem;
+  }
+  .main__contact {
+    max-width: 310px;
+  }
+  .main__contact .contactInfo {
+    width: 100%;
+  }
+  .main__contact .contactInfo h2 {
+    font-size: 2rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    position: relative;
+  }
+  .main__contact .contactInfo h2::after {
+    height: 3px;
+  }
+  .main__contact .contactInfo .envianosP {
+    font-size: 1rem;
+  }
+  .main__contact .formItem--size {
+    font-size: 1rem;
+  }
+  .main__tencoPreguntas h2 {
+    font-size: 2rem;
+  }
+  .main__tencoPreguntas h2::after {
+    height: 3px;
+  }
+  .main__tencoPreguntas .accordeonPreguntas {
+    padding: 20px 0;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasHeader .preguntasButton {
+    font-size: 1rem;
+  }
+  .main__tencoPreguntas .accordeonPreguntas .preguntasItem .preguntasBody {
+    font-size: 1rem;
+  }
+  .footer__banner .contenedor {
+    width: 360px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__banner .foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__banner .foto img {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=main.css.map */

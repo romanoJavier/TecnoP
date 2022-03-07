@@ -56,6 +56,7 @@
     }
 }
 
+/* BOTON DE CONTACTO Y MODAL */
 
 .boton{
     border: 0;
@@ -89,73 +90,5 @@
         list-style: none;
         padding: 0;
         margin: 0;
-    }
-}
-
-@media only screen and (max-width:1200px){
-
-    .main{
-        &__contact{
-            max-width: 982px;
-        }
-    }
-}
-
-@media only screen and (max-width:992px){
-
-    .main{
-        &__contact{
-            max-width: 757px;
-            .contactInfo{
-                h2{
-                    font-size: $h2-fontSz992;
-                }
-                .envianosP{
-                    font-size: $p-fontSz992;
-                }
-            }
-            .formItem--size{
-                font-size: $p-fontSz992;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width:767px){
-
-    .main{
-        &__contact{
-            max-width: 460px;
-        }
-    }
-    .boton{
-        display: none;
-    }
-}
-
-
-@media only screen and (max-width:470px){
-
-    .main{
-        &__contact{
-            max-width: 310px;
-            .contactInfo{
-                width: 100%;
-                h2{
-                    font-size: $h2-fontSz470;
-                    width: max-content;
-                    position: relative;
-                }
-                h2::after{
-                    height: 3px;
-                }
-                .envianosP{
-                    font-size: $p-fontSz470;
-                }
-            }
-            .formItem--size{
-                font-size: $p-fontSz470;
-            }
-        }
     }
 }

@@ -23,25 +23,12 @@
                 width: 495px;
             }
         }
-
-        &__contactP{
-            width: 450px;
-        }
-        &__form{
-            margin-top: 30px;
-        }
-        &__formItem--size{
-            font-size: 1rem;
-        }
-        &__personaInfo{
-            height: 35px;
-        }
-        &__enviar{
-            font-size: 1rem;
-            padding: 8px 26px;   
+        &__contact{
+            max-width: 982px;
         }
     }
 }
+
 
 @media only screen and (max-width:992px){
     .header{
@@ -105,49 +92,51 @@
                 width: 380px;
             }
         }
-
         &__contact{
-            flex-direction: column-reverse;
+            max-width: 982px;
         }
-        &__contactContents{
-            width: 100vw;
-            font-size: 1rem;
-        }
-        &__contactP{
-            width:400px;
-        }
-        &__info{
-            width: 100vw;
-            display: flex;
-            align-items: center;
-        }
-        &__envianos{
-            font-size: 16px;
-            width: 400px;   
-        }
-        &__form{
-            width: 400px;
-        }
-        &__formItem--size{
-            width: 50%;
-            font-size: 1rem;
-            padding: 0 10px;
-        }
-        &__personaInfo{
-            height: 35px;
-        }
-        &__formItem{
-            display: block;
-            margin-top: 30px;
-        }
-        &__enviar{
-            font-size: 1rem;
-            padding: 8px 26px;   
-        } 
+        
         &__galeria{
             max-width: 800px;
         }
-            
+        
+        &__contact{
+            max-width: 757px;
+            .contactInfo{
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                .envianosP{
+                    font-size: $p-fontSz992;
+                }
+            }
+            .formItem--size{
+                font-size: $p-fontSz992;
+            }
+        }
+
+        &__tencoPreguntas{
+            h2{
+                font-size: $h2-fontSz992;
+            }
+            h2::after{
+                height: 3px;
+            }
+            .accordeonPreguntas{
+                padding: 30px 0;
+                .preguntasItem{
+                    .preguntasHeader{
+                        .preguntasButton{
+                            font-size: $h4-fontSz992;
+                        }
+                        }
+                        .preguntasBody{
+                            font-size: $p-fontSz992;
+                            }
+                    }
+        
+                }
+            }
     }
 }
 
@@ -221,10 +210,50 @@
                 width: 80%;
             }
         }  
+
+        &__contact{
+            max-width: 460px;
+        }
+
+        &__tencoPreguntas{
+            width: 90%;
+            }
+    }
+
+    .boton{
+        display: none;
     }
 
 
         .footer{
+            &__banner{
+                .contenedor{
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+            
+                        .texto{
+                            padding: 40px 40px;
+                            h3{
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                            }
+                            h4{
+                                font-size: 1.063rem;
+                            }
+                        }
+                        .foto{
+                            display: flex;
+                            justify-content: center;
+        
+                            img{
+                                width: 80%
+                            }
+                    }
+                }
+            }    
             .social{
                 background-color:#75B8C8;
                 padding: 30px 0;
@@ -297,5 +326,71 @@
             }
 
     }
+
+    &__contact{
+        max-width: 310px;
+        .contactInfo{
+            width: 100%;
+            h2{
+                font-size: $h2-fontSz470;
+                width: max-content;
+                position: relative;
+            }
+            h2::after{
+                height: 3px;
+            }
+            .envianosP{
+                font-size: $p-fontSz470;
+            }
+        }
+        .formItem--size{
+            font-size: $p-fontSz470;
+        }
+    }
+    
+    &__tencoPreguntas{
+        h2{
+            font-size: $h2-fontSz470;
+        }
+        h2::after{
+            height: 3px;
+        }
+        .accordeonPreguntas{
+            padding: 20px 0;
+            .preguntasItem{
+                .preguntasHeader{
+                    .preguntasButton{
+                        font-size: $h4-fontSz470;
+                    }
+                    }
+                    .preguntasBody{
+                        font-size: $p-fontSz470;
+                        }
+                }
+    
+            }
+        }
 }
+    .footer{
+        &__banner{
+            .contenedor{
+                width: 360px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        
+                    }
+                    .foto{
+                        display: flex;
+                        justify-content: center;
+
+                        img{
+                            
+                            width: 70%
+
+        
+                        }
+                    }
+                }
+            }   
 }

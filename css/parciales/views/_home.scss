@@ -1,5 +1,7 @@
 @import "../utilities/variables";
 
+/*BANNER Y SUBSECTION INDEX*/
+
 .main{
     &__banner{
         width: 100%; 
@@ -41,7 +43,6 @@
         z-index: -1;
     }
 
-  
     &__subsection{
         padding: 80px 0;
         .main__subsectionText{
