@@ -823,6 +823,12 @@ body {
   .main__camaraService .texto {
     width: 495px;
   }
+  .main__galeria {
+    width: 97%;
+  }
+  .main__tencoPreguntas {
+    width: 97%;
+  }
   .main__contact {
     max-width: 982px;
   }
@@ -878,11 +884,20 @@ body {
   .main__camaraService .texto {
     width: 380px;
   }
+  .main__galeria {
+    width: 95%;
+  }
+  .main__galeria .presentacionGaleria h2 {
+    font-size: 2.313rem;
+  }
+  .main__galeria .presentacionGaleria h2::after {
+    height: 3px;
+  }
+  .main__galeria .presentacionGaleria h3 {
+    font-size: 1.125rem;
+  }
   .main__contact {
     max-width: 982px;
-  }
-  .main__galeria {
-    max-width: 800px;
   }
   .main__contact {
     max-width: 757px;
@@ -895,6 +910,9 @@ body {
   }
   .main__contact .formItem--size {
     font-size: 1.063rem;
+  }
+  .main__tencoPreguntas {
+    width: 95%;
   }
   .main__tencoPreguntas h2 {
     font-size: 2.313rem;
@@ -969,9 +987,6 @@ body {
   .main__subsection .main__subsectionImg {
     width: 80%;
   }
-  .main__galeria {
-    max-width: 600px;
-  }
   .main__serviciosPrincipales {
     width: 80%;
   }
@@ -983,6 +998,9 @@ body {
   }
   .main__camaraService .texto {
     width: 80%;
+  }
+  .main__galeria {
+    width: 90%;
   }
   .main__contact {
     max-width: 460px;
@@ -1102,6 +1120,15 @@ body {
   }
   .main__subsection .main__subsectionImgText {
     font-size: 1rem;
+  }
+  .main__galeria .presentacionGaleria h2 {
+    font-size: 2rem;
+  }
+  .main__galeria .presentacionGaleria h2::after {
+    height: 3px;
+  }
+  .main__galeria .presentacionGaleria h3 {
+    font-size: 1.068rem;
   }
   .main__contact {
     max-width: 310px;

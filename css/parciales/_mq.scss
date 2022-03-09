@@ -23,6 +23,15 @@
                 width: 495px;
             }
         }
+
+        &__galeria{
+            width: 97%;
+        }
+
+        &__tencoPreguntas{
+            width: 97%;
+        }
+        
         &__contact{
             max-width: 982px;
         }
@@ -92,12 +101,24 @@
                 width: 380px;
             }
         }
+
+        &__galeria{
+            width: 95%;
+            .presentacionGaleria{
+                h2{
+                    font-size: $h2-fontSz992;
+                }
+                h2::after{
+                    height: 3px;
+                }
+                h3{
+                    font-size: $h3-fontSz992;
+                }
+            }
+        }
+
         &__contact{
             max-width: 982px;
-        }
-        
-        &__galeria{
-            max-width: 800px;
         }
         
         &__contact{
@@ -116,6 +137,7 @@
         }
 
         &__tencoPreguntas{
+            width: 95%;
             h2{
                 font-size: $h2-fontSz992;
             }
@@ -191,9 +213,7 @@
                 width: 80%;
                 }
             }
-        &__galeria{
-            max-width: 600px;
-        }
+
         &__serviciosPrincipales{
             width: 80%;
         }
@@ -211,6 +231,11 @@
             }
         }  
 
+        &__galeria{
+                width: 90%;
+
+    }
+
         &__contact{
             max-width: 460px;
         }
@@ -225,35 +250,33 @@
     }
 
 
-        .footer{
-            &__banner{
-                .contenedor{
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-            
-                        .texto{
-                            padding: 40px 40px;
-                            h3{
-                                font-size: 1.5rem;
-                            }
-                            p{
-                                font-size: 1rem;
-                            }
-                            h4{
-                                font-size: 1.063rem;
-                            }
-                        }
-                        .foto{
-                            display: flex;
-                            justify-content: center;
-        
-                            img{
-                                width: 80%
-                            }
+    .footer{
+        &__banner{
+            .contenedor{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .texto{
+                    padding: 40px 40px;
+                    h3{
+                    font-size: 1.5rem;
+                    }
+                    p{
+                    font-size: 1rem;
+                    }
+                    h4{
+                    font-size: 1.063rem;
                     }
                 }
-            }    
+                .foto{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        width: 80%
+                    }
+                }
+            }
+        }    
             .social{
                 background-color:#75B8C8;
                 padding: 30px 0;
@@ -329,6 +352,20 @@
             }
 
     }
+
+    &__galeria{
+        .presentacionGaleria{
+            h2{
+                font-size: $h2-fontSz470;
+            }
+            h2::after{
+                height: 3px;
+            }
+            h3{
+                font-size: $h3-fontSz470;
+            }
+    }
+}
 
     &__contact{
         max-width: 310px;
