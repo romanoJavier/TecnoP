@@ -3,6 +3,10 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Libreria AOS (animaciones) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
@@ -22,7 +26,7 @@
 
         <div  class="header__logo">
             <a class="logo" href="../../index.html">
-                <img src="../multimedia/fotos/LOGO.png" alt="LOGO">
+                <img src="../multimedia/fotos/LOGO.png" alt="LOGO" data-aos="fade-right" data-aos-duration="600">
             </a>  
         </div>
     
@@ -30,27 +34,27 @@
             <input type="checkbox" id="menuBar">
             <label for="menuBar"><img src="../multimedia/fotos/menu.png" alt="" class="menuRespon"> </label>
             <ul class="menuLista">
-                <li class="menuItem">
+                <li class="menuItem" data-aos="zoom-in" data-aos-duration="600">
                     <a href="../../index.html" class="itemLink">
                         Inicio
                     </a>
                 </li>
-                <li class="menuItem">
+                <li class="menuItem" data-aos="zoom-in" data-aos-duration="600">
                     <a href="servicios.html" class="itemLink">
                         Servicios
                     </a>
                 </li>
-                <li class="menuItem">
+                <li class="menuItem" data-aos="zoom-in" data-aos-duration="600">
                     <a href="productos.html" class="itemLink">
                         Productos
                     </a>
                 </li>
-                <li class="menuItem">
+                <li class="menuItem" data-aos="zoom-in" data-aos-duration="600">
                     <a href="preguntas.html" class="itemLink">
                         Preguntas frecuentes
                     </a>
                 </li>
-                <li class="menuItem">
+                <li class="menuItem" data-aos="zoom-in" data-aos-duration="600">
                     <a href="contacto.html" class="itemLink">
                         Contacto
                     </a>
@@ -262,5 +266,13 @@
         **********SCRIPT BS**********
     -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <!--
+      **********SCRIPT AOS**********
+    -->
+    <script>
+        AOS.init(
+            {once: true}
+        );
+    </script>
 </body>
 </html>
