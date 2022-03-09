@@ -300,9 +300,12 @@
     }
     .main{
         &__banner{
+            height: 90vh;
             .main__bannerText{
+                flex-direction: column;
+                padding: 0 1rem;
                 font-size: $banner-fontSz470;
-                width: 355px;
+                width: 100%;
                 .main__bannerImg{
                     width: 150px;
                 }
